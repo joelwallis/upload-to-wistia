@@ -1,0 +1,33 @@
+doctype html
+html(lang="en", ng-app="wistiaUploadApp")
+  head
+    title="Upload to Wistia"
+    link(type="text/css" rel="stylesheet" href="app.css")
+  body
+    .app(ng-controller="MainController as vm")
+      .container
+        .row
+          .col-md-12
+            h1 Upload to Wistia
+            p.
+              This is a simple SPA that allows you to upload videos to Wistia.
+              First, click on <strong>Setup API key</strong>
+
+            h3 #1: Provide your Wistia API token
+            p.
+              API tokens are sensitive informations so it will not save or keep
+              it. That's why you need to provide it every time you use this
+              experiment. Security reasons. :\
+            p
+              button.btn.btn-default(ng-disabled="vm.apiToken", ng-click="vm.setupApiToken()").
+                Setup API key
+
+            h3 #2: Upload a video to Wistia
+            p.
+              If you provided a valid Wistia API token you'll be able to upload
+              a video using the button below.
+            p
+              button.btn.btn-primary(ng-disabled="!vm.apiToken", ng-click="vm.upload()", wistia-upload).
+                Upload a video
+    script(src="vendor.js")
+    script(src="app.js")
