@@ -19,13 +19,15 @@ the [jQuery File Upload][jfu] by [Sebastian Tschan](https://github.com/blueimp).
 In short:
 
 ```sh
-npm run build
+npm install
+npm start
 ```
 
 The experiment will be built at `www/`.
 
 Additional build/watch commands:
 
+- `npm run build`
 - `npm run build:html`
 - `npm run build:js`
 - `npm run build:js:vendor`
