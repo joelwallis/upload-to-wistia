@@ -1,0 +1,10 @@
+form
+  p
+    input(type='file', style='display: none')
+    button.btn.btn-primary(ng-disabled='!apiToken') Upload a video
+
+  .progress(style='display: none')
+    .progress-bar(role='progressbar')
+      span(class='sr-only') 0% completed
+
+  .player-container(style='display:none') Player goes here

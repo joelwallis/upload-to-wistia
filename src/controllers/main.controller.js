@@ -3,15 +3,15 @@
   'use strict'
   angular.module('wistiaUploadApp').controller('MainController', MainController)
 
-  MainController.$inject = ['$window']
-  function MainController ($window) {
+  MainController.$inject = ['$scope', '$window']
+  function MainController ($scope, $window) {
     console.log('MainController running')
 
     var vm = this
-    vm.apiToken = null
+    $scope.apiToken = vm.apiToken = null
 
     vm.setupApiToken = () => {
-      vm.apiToken = $window.prompt('Please enter your Wistia API token:')
+      $scope.apiToken = vm.apiToken = $window.prompt('Please enter your Wistia API token:')
     }
   }
 })(angular, jQuery)
