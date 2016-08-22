@@ -10,9 +10,9 @@ the [jQuery File Upload][jfu] by [Sebastian Tschan](https://github.com/blueimp).
 - [x] Explore Wistia
 - [x] Explore jQuery File Upload
 - [x] Setup AngularJS (directory structure, tasks, basic components, etc.)
-- [ ] Wistia video upload directive
+- [x] Wistia video upload directive
 - [ ] Tests
-- [ ] Docs
+- [x] Docs
 
 ## Build
 
